@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'RalewayRegular';
-  src: url('fonts/RalewayRegular.woff2') format('woff2'),
-      url('fonts/RalewayRegular.woff') format('woff');
+  font-family: 'Raleway';
+  src: url('../fonts/RalewayRegular.woff2') format('woff2'),
+      url('../fonts/RalewayRegular.woff') format('woff');
       font-weight: 400;
       font-style: normal;
       font-display: swap;
 }
 
 @font-face {
-  font-family: 'RalewayLight';
-  src: url('fonts/RalewayLight.woff2') format('woff2'),
-      url('fonts/RalewayLight.woff') format('woff');
+  font-family: 'Raleway';
+  src: url('../fonts/RalewayLight.woff2') format('woff2'),
+      url('../fonts/RalewayLight.woff') format('woff');
       font-weight: 300;
       font-style: normal;
       font-display: swap;
@@ -18,18 +18,18 @@
 
 
 @font-face {
-  font-family: 'RalewayMedium';
-  src: url('fonts/RalewayMedium.woff2') format('woff2'),
-      url('fonts/RalewayMedium.woff') format('woff');
+  font-family: 'Raleway';
+  src: url('../fonts/RalewayMedium.woff2') format('woff2'),
+      url('../fonts/RalewayMedium.woff') format('woff');
       font-weight: 500;
       font-style: normal;
       font-display: swap;
 }
 
 @font-face {
-  font-family: 'PrataRegular';
-  src: url('fonts/PrataRegular.woff2') format('woff2'),
-      url('fonts/PrataRegular.woff') format('woff');
+  font-family: 'Prata';
+  src: url('../fonts/PrataRegular.woff2') format('woff2'),
+      url('../fonts/PrataRegular.woff') format('woff');
       font-weight: 400;
       font-style: normal;
       font-display: swap;
@@ -38,7 +38,7 @@
 
 html {
     box-sizing: border-box;
-    font-family: 'PrataRegular', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     background: var(#fff);
   }
@@ -73,3 +73,58 @@ html {
     padding: 0;
     list-style: none;
   }
+
+  /*info*/
+
+.info {
+  background: #F5F5F5;
+}
+
+.info__container {
+  margin: 0 auto;
+  padding: 0 155px 0 0;
+  max-width: 1366px;
+}
+
+.info__title {
+  margin: 0;
+  margin-bottom: 56px;
+  font-family: 'Prata';
+  font-size: 32px;
+  line-height: 43px;
+  color: #AD2D11;
+}
+
+  .info__image {
+    display: inline-block;
+    flex-shrink: inherit;
+    margin-right: 124px;
+    width: 771px;
+    height: 476px;
+  }
+
+  .info__wrapp {
+    display: flex !important;
+  }
+
+  .info__text {
+    margin: 0;
+    font-family: 'Raleway';  
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 76px;
+    height: 76px;
+  }
+
+  .swiper-button-next:after {  
+    background-image: url('../image/arrow-right.svg');
+  }
+  
+  .swiper-button-prev:after {
+    background-image: url('../image/arrow-left.svg');
+}
