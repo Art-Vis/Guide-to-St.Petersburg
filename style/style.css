@@ -237,7 +237,7 @@ img {
 
 .sub__img-right {
   top: 51px;
-  right: 182px;
+  right: 170px;
   width: 186px;
   height: 267px;
 }
@@ -272,10 +272,12 @@ img {
 /* history */
 
 .history {
-  padding-top: 100px;
+  padding-top: 128px;
 }
 
 .history__title {
+  margin: 0;
+  margin-bottom: 55px;
   padding-left: 95px;
   font-family: 'Prata', sans-serif;
   font-size: 32px;
@@ -291,6 +293,7 @@ img {
 
 .history__item {
   display: flex;
+  height: 200px;
 }
 
 .history__item:not(:nth-child(2n)) {
@@ -305,6 +308,7 @@ img {
   display: flex;
   width: 50%;
   position: relative;
+  justify-content: flex-end;
 }
 
 .history__item__card-right {
@@ -336,20 +340,27 @@ img {
   padding: 12px 30px;
 }
 
+.history__item__card-text {
+  margin: 0;  
+}
+
 .history__item__card-text--large {
   transform: translateY(20px);
 }
 
 .history__item__card-title {
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  font-family: 'Prata';
 }
 
-.history__item__card-left>* {
+/*.history__item__card-left>* {
   height: 50%;
-}
+}*/
 
 .history__item__card-left::before {
   content: '';
@@ -358,7 +369,7 @@ img {
   right: 0;
   height: 1px;
   background-color: var(--color-orange);
-  bottom: 50%;
+  bottom: 56%;
 }
 
 .history__item__card::before {
@@ -389,7 +400,7 @@ img {
   counter-increment: counter;
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 44%;
   transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
@@ -397,6 +408,7 @@ img {
   justify-content: center;
   align-items: center;
   z-index: 2;
+  font-family: 'Prata';
   background-color: var(--color-orange);
   color: var(--color-white);
   border-radius: 100%;
