@@ -311,8 +311,9 @@ img {
   padding: 13px;
   border: 1px solid var(--color-orange);
   border-radius: 100%;
-  max-width: 150px;
-  width: 100%;
+  width: 176px;
+  height: 176px;
+  flex-shrink: 0;
 }
 
 .history__item__card-image {
@@ -333,6 +334,10 @@ img {
   height: 50%;
   margin: 0;
   padding: 12px 30px;
+}
+
+.history__item__card-text--large {
+  transform: translateY(20px);
 }
 
 .history__item__card-title {
@@ -402,3 +407,4 @@ img {
   right: 0;
   transform: translate(50%, -50%);
 }
+
