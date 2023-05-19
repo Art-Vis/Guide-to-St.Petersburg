@@ -146,6 +146,7 @@ img {
   line-height: 28px;
   text-align: center;
 }
+
 /*info*/
 
 .info {
@@ -236,33 +237,40 @@ img {
 
 .sub__img-right {
   top: 51px;
-  right: 182px;  
+  right: 182px;
   width: 186px;
   height: 267px;
 }
 
 /* Свайпер */
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
   left: 895px;
   top: 322px;
 }
 
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
   right: 295px;
   top: 322px;
 }
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
   content: '';
   width: 76px;
   height: 76px;
 }
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
   content: '';
   width: 76px;
   height: 76px;
 }
 
 /* history */
+
 .history {
   padding-top: 100px;
 }
@@ -303,8 +311,9 @@ img {
   padding: 13px;
   border: 1px solid var(--color-orange);
   border-radius: 100%;
-  max-width: 150px;
-  width: 100%;
+  width: 176px;
+  height: 176px;
+  flex-shrink: 0;
 }
 
 .history__item__card-image {
@@ -317,12 +326,18 @@ img {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  position: relative;
 }
 
 .history__item__card-title .history__item__card-text {
   height: 50%;
   margin: 0;
   padding: 12px 30px;
+}
+
+.history__item__card-text--large {
+  transform: translateY(20px);
 }
 
 .history__item__card-title {
@@ -332,14 +347,18 @@ img {
   position: relative;
 }
 
-.history__item__card-title::before {
+.history__item__card-left>* {
+  height: 50%;
+}
+
+.history__item__card-left::before {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   height: 1px;
   background-color: var(--color-orange);
-  bottom: -0.5px;
+  bottom: 50%;
 }
 
 .history__item__card::before {
@@ -386,5 +405,6 @@ img {
 .history__item:nth-child(2n) .history__item__card::after {
   left: auto;
   right: 0;
-  transform: translate(50%, 50%);
+  transform: translate(50%, -50%);
 }
+
