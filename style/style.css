@@ -151,7 +151,11 @@ img {
 
 .info {
   padding-top: 201px;
-  background: #F5F5F5;
+  background: #FDFAF4;
+}
+
+.info__sub {
+  background-color: var( --color-white);
 }
 
 .info__container {
