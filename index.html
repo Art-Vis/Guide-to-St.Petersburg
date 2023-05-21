@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="./style/animate.min.css">
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/style.css">
-    <script src="./scripts/wow.min.js"></script>
+    <script defer src="./scripts/wow.min.js"></script>
+    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
     <script defer src="./scripts/main.js"></script>
 </head>
 
@@ -44,29 +46,12 @@
             </div>
         </section>
     </header>
-<<<<<<< HEAD
-    <section class="info">
-        <div class="container">
-            <h2 class="info__title">О городе</h2>
-            <div class="info__wrapp">
-                <div class="info__image">
-                    <img src="image/info-1.jpg" alt="Петергоф">
-                </div>
-                <div class="info__descr">
-                    <p class="info__text">Санкт-Петербург — один из самых красивых городов России, который привлекает туристов со всего мира своей архитектурой, культурными достопримечательностями и богатой историей.</p>
-                        <div class="info__descr-arrow">
-                            <span class="arrow-left"></span>
-                            <span class="arrow-right"></span>
-                        </div>
-                </div>
-=======
->>>>>>> cef67cb44ea7dbfb7ca2372c93dccd9b9cb68086
 
 
     <section class="info">
         <div class="container info__container">
-            <h2 class="title info__title wow fadeInLeft" data-wow-offset="600" >О городе</h2>
-            <div class="projects-swiper-wrapper wow fadeInUp" data-wow-offset="500" >
+            <h2 class="title info__title wow fadeInLeft" data-wow-offset="600">О городе</h2>
+            <div class="projects-swiper-wrapper wow fadeInUp" data-wow-offset="500">
                 <div class="swiper-container slider swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide info__wrapp">
@@ -104,18 +89,19 @@
                     <div class="swiper-button-next swiper-button-next"></div>
                 </div>
             </div>
- 
+
         </div>
         <div class="info__sub">
             <div class="container">
                 <div class="sub wow fadeIn" data-wow-offset="400">
                     <div class="sub__text wow fadeInLeft" data-wow-offset="250" data-wow-delay="0.3s">
                         <p>В&nbsp;этом путеводителе мы&nbsp;расскажем о&nbsp;самых&nbsp;интересных&nbsp;местах
-                            Санкт-Петербурга, которые обязательно стоит посетить при поездке в&nbsp;этот прекрасный город.
+                            Санкт-Петербурга, которые обязательно стоит посетить при поездке в&nbsp;этот прекрасный
+                            город.
                         </p>
                     </div>
-                    <img src="./image/info-4.png" class="sub__img-right"></img>
-                    <img src="./image/info-5.png" class="sub__img-left"></img>
+                    <img src="./image/info-4.png" class="sub__img-right" alt="Медный всадник">
+                    <img src="./image/info-5.png" class="sub__img-left" alt="">
                 </div>
             </div>
         </div>
@@ -254,52 +240,65 @@
         <div class="landmark__container">
             <h2 class="title landmark__title wow fadeInLeft" data-wow-offset="300">Достопримечательности</h2>
             <p class="common-text wow fadeInRight" data-wow-offset="300">
-                Санкт-Петербург&nbsp;&mdash; город, который известен своими красивыми зданиями, музеями и&nbsp;парками. Это один 
-                из&nbsp;самых красивых городов России, который привлекает миллионы туристов каждый год. В&nbsp;этой статье 
+                Санкт-Петербург&nbsp;&mdash; город, который известен своими красивыми зданиями, музеями и&nbsp;парками.
+                Это один
+                из&nbsp;самых красивых городов России, который привлекает миллионы туристов каждый год. В&nbsp;этой
+                статье
                 мы&nbsp;расскажем о&nbsp;самых знаменитых достопримечательностях Санкт-Петербурга.
             </p>
             <ul class="landmark__list list-reset">
                 <li class="landmark__item wow fadeInLeft" data-wow-offset="500">
                     <h3 class="landmark__item__title">Эрмитаж</h3>
                     <img src="./image/ermitaj.jpg" alt="Эрмитаж" class="landmark__item__img">
-                    <p class="landmark__item__text">Эрмитаж&nbsp;&mdash; один из&nbsp;самых известных музеев мира, который находится в&nbsp;самом сердце Санкт-Петербурга.
-                        Это огромный музей с&nbsp;более чем 3&nbsp;миллионами экспонатов, включая произведения искусства, античные скульптуры, 
-                        древние монеты и&nbsp;многое другое. Здание музея само по&nbsp;себе является достопримечательностью&nbsp;&mdash; это огромный 
+                    <p class="landmark__item__text">Эрмитаж&nbsp;&mdash; один из&nbsp;самых известных музеев мира,
+                        который находится в&nbsp;самом сердце Санкт-Петербурга.
+                        Это огромный музей с&nbsp;более чем 3&nbsp;миллионами экспонатов, включая произведения
+                        искусства, античные скульптуры,
+                        древние монеты и&nbsp;многое другое. Здание музея само по&nbsp;себе является
+                        достопримечательностью&nbsp;&mdash; это огромный
                         дворец с&nbsp;белоснежными колоннами и&nbsp;золотыми украшениями.</p>
                 </li>
                 <li class="landmark__item wow fadeInRight" data-wow-offset="500">
                     <h3 class="landmark__item__title">Дворцовая площадь</h3>
                     <img src="./image/dvoreckaia-ploshad.jpg" alt="Дворцовая площадь" class="landmark__item__img">
-                    <p class="landmark__item__text">Дворцовая площадь&nbsp;&mdash; это центральная площадь Санкт-Петербурга, 
-                        на&nbsp;которой находятся некоторые из&nbsp;самых знаменитых достопримечательностей города, такие как Зимний
-                        дворец, Эрмитаж и&nbsp;Александровский столб. Площадь окружена красивыми зданиями и&nbsp;колоннами,
+                    <p class="landmark__item__text">Дворцовая площадь&nbsp;&mdash; это центральная площадь
+                        Санкт-Петербурга,
+                        на&nbsp;которой находятся некоторые из&nbsp;самых знаменитых достопримечательностей города,
+                        такие как Зимний
+                        дворец, Эрмитаж и&nbsp;Александровский столб. Площадь окружена красивыми зданиями
+                        и&nbsp;колоннами,
                         а&nbsp;также является местом проведения различных праздников и&nbsp;мероприятий.</p>
                 </li>
                 <li class="landmark__item wow fadeInLeft" data-wow-offset="500">
                     <h3 class="landmark__item__title">Зимний дворец</h3>
                     <img src="./image/zimnii-dvorec.jpg" alt="Зимний дворец" class="landmark__item__img">
-                    <p class="landmark__item__text">Зимний дворец&nbsp;&mdash; один из&nbsp;самых красивых и&nbsp;известных
+                    <p class="landmark__item__text">Зимний дворец&nbsp;&mdash; один из&nbsp;самых красивых
+                        и&nbsp;известных
                         дворцов России. Он&nbsp;был построен в&nbsp;XVIII веке для императорской семьи и&nbsp;находится
                         на&nbsp;Дворцовой площади. Сегодня в&nbsp;здании Зимнего дворца находится Эрмитаж.</p>
                 </li>
                 <li class="landmark__item wow fadeInRight" data-wow-offset="500">
                     <h3 class="landmark__item__title">Петергоф</h3>
                     <img src="./image/petergof-fontani.jpg" alt="Петергоф" class="landmark__item__img">
-                    <p class="landmark__item__text">Петергоф&nbsp;&mdash; это знаменитый дворцово-парковый комплекс, 
-                        расположенный на&nbsp;берегу Финского залива. Он&nbsp;был основан Петром I&nbsp;в начале XVIII века 
-                        и&nbsp;является одним из&nbsp;самых красивых и&nbsp;известных достопримечательностей Санкт-Петербурга. 
+                    <p class="landmark__item__text">Петергоф&nbsp;&mdash; это знаменитый дворцово-парковый комплекс,
+                        расположенный на&nbsp;берегу Финского залива. Он&nbsp;был основан Петром I&nbsp;в начале XVIII
+                        века
+                        и&nbsp;является одним из&nbsp;самых красивых и&nbsp;известных достопримечательностей
+                        Санкт-Петербурга.
                         В&nbsp;Петергофе находятся многочисленные фонтаны, скульптуры и&nbsp;дворцы.</p>
                 </li>
                 <li class="landmark__item wow fadeInLeft" data-wow-offset="500">
                     <h3 class="landmark__item__title">Исаакиевский собор</h3>
                     <img src="./image/issaakievski-sobor.jpg" alt="Исаакиевский собор" class="landmark__item__img">
-                    <p class="landmark__item__text">Исаакиевский собор&nbsp;&mdash; это один из&nbsp;самых красивых 
-                        и&nbsp;величественных храмов Санкт-Петербурга. Он&nbsp;был построен в&nbsp;XIX веке и&nbsp;является 
-                        одним из&nbsp;символов города. Собор украшен куполами, колоннами и&nbsp;мозаиками, а&nbsp;также является 
+                    <p class="landmark__item__text">Исаакиевский собор&nbsp;&mdash; это один из&nbsp;самых красивых
+                        и&nbsp;величественных храмов Санкт-Петербурга. Он&nbsp;был построен в&nbsp;XIX веке
+                        и&nbsp;является
+                        одним из&nbsp;символов города. Собор украшен куполами, колоннами и&nbsp;мозаиками, а&nbsp;также
+                        является
                         одной из&nbsp;самых высоких церквей в&nbsp;мире.</p>
                 </li>
             </ul>
-        </div>        
+        </div>
     </section>
     <section class="expenses">
         <div class="container">
@@ -308,31 +307,62 @@
                 Перед поездкой необходимо рассчитать приблизительный бюджет, который понадобится вам для путешествия.
             </p>
             <ul class="expenses__list list-reset">
-                <li class="expenses__item wow fadeInRight">
+                <li class="expenses__item wow fadeInUp" data-wow-duration="1s">
                     <img class="expenses__item-image" src="./image/accommodation.svg" alt="Проживание">
                     <p class="expenses__item-text">Проживание</p>
                     <span class="expenses__item-price">от 2000 ₽</span>
                 </li>
-                <li class="expenses__item wow fadeInLeft">
+                <li class="expenses__item wow fadeInUp" data-wow-duration="1.5s">
                     <img class="expenses__item-image" src="./image/cutlery.svg" alt="Питание">
                     <p class="expenses__item-text">Средний чек в ресторане</p>
                     <span class="expenses__item-price">1300 ₽</span>
                 </li>
-                <li class="expenses__item wow fadeInRight">
+                <li class="expenses__item wow fadeInUp" data-wow-duration="2s">
                     <img class="expenses__item-image" src="./image/museum.svg" alt="Экскурсии">
                     <p class="expenses__item-text">Экскурсии</p>
                     <span class="expenses__item-price">от 1000 ₽</span>
                 </li>
-                <li class="expenses__item wow fadeInLeft">
+                <li class="expenses__item wow fadeInUp" data-wow-duration="2.5s">
                     <img class="expenses__item-image" src="./image/souvenirs.svg" alt="Сувениры">
                     <p class="expenses__item-text">Сувениры</p>
                     <span class="expenses__item-price">от 300 ₽</span>
                 </li>
             </ul>
-        </div>        
+        </div>
     </section>
     <section class="map">
+        <div class="map-container">
+            <h2 class="title map__title">Карта Петербурга</h2>
+        </div>
+            <div id="map" class="wow fadeInUp" data-wow-offset="600" style="width: 100%; height: 476px"></div>
     </section>
+    <footer class="footer">
+        <div class="container">
+                <nav class="footer__nav">
+                    <ul class="footer__list list-reset">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">О городе</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">История</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Достопримечательности</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Бюджет поездки</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Карта Петербурга</a>
+                        </li>
+                    </ul>
+                </nav>
+            <div class="coopyright">
+                <span class="coopyright__year">© 2023</span>
+                <span class="coopyright__conf">Политика конфиденциальности</span>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./scripts/swiper_top.js"></script>
 </body>

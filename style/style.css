@@ -40,7 +40,7 @@
   --color-white: #FFF;
   --color-black: #000000;
   --color-brown: #AD2D11;
-  --color-background : #FDFAF4;
+  --color-background: #FDFAF4;
 }
 
 html {
@@ -87,7 +87,7 @@ img {
 }
 
 .title {
-  margin: 0;  
+  margin: 0;
   font-family: 'Prata', sans-serif;
   font-size: 32px;
   font-weight: 400;
@@ -100,6 +100,7 @@ img {
   background-image: url('../image/header-bg.png');
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__nav {
@@ -165,7 +166,7 @@ img {
 }
 
 .info__sub {
-  background-color: var( --color-white);
+  background-color: var(--color-white);
 }
 
 .info__container {
@@ -472,7 +473,7 @@ img {
 .landmark__item__title {
   margin: 0;
   width: 187px;
-  margin-right: 110px;  
+  margin-right: 110px;
   color: var(--color-black);
   font-family: 'Prata';
   font-size: 24px;
@@ -493,6 +494,11 @@ img {
 /* expenses */
 .expenses {
   padding: 124px 0 248px;
+}
+
+.expenses .container {
+  width: 1176px;
+  margin: 0 auto;
 }
 
 .expenses__title {
@@ -531,4 +537,83 @@ img {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+}
+
+/* MAP */
+.map-container {
+  width: 1176px;
+  margin: 0 auto;
+}
+
+.map__title {
+  margin-bottom: 55px;
+}
+
+[class*="ground-pane"] {
+  filter: hue-rotate(207deg);
+}
+
+.ymaps-2-1-79-copyrights-pane {
+  display: none;
+}
+
+/* FOOTER */
+
+.footer {
+  height: 200px;
+  padding-top: 48px;
+  padding-bottom: 24px;
+  color: #FDFAF4;
+  background-color: #181515;
+}
+
+.footer .container {
+  width: 1176px;
+  margin: 0 auto;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 99px;
+  width: 570px;
+}
+
+.footer__item {
+  max-width: 200px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.footer__link {
+  line-height: 19px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__link:focus {
+  color: var(--color-brown);
+}
+
+.footer__link:hover {
+  color: var(--color-brown);
+}
+
+.footer__link:active {
+  color: var(--color-orange);
+}
+
+.coopyright {
+  width: 570px;
+}
+
+.coopyright__year {
+  margin-right: 57px;
 }
