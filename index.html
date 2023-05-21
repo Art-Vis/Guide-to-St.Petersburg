@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путеводитель по Санкт-Петербургу</title>
-    <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/animate.min.css">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
     <script src="./scripts/wow.min.js"></script>
     <script defer src="./scripts/main.js"></script>
 </head>
@@ -236,7 +236,7 @@
     <section class="landmark">
         <div class="landmark__container">
             <h2 class="title landmark__title wow fadeInLeft" data-wow-offset="300">Достопримечательности</h2>
-            <p class="landmark__text wow fadeInRight" data-wow-offset="300">
+            <p class="common-text wow fadeInRight" data-wow-offset="300">
                 Санкт-Петербург&nbsp;&mdash; город, который известен своими красивыми зданиями, музеями и&nbsp;парками. Это один 
                 из&nbsp;самых красивых городов России, который привлекает миллионы туристов каждый год. В&nbsp;этой статье 
                 мы&nbsp;расскажем о&nbsp;самых знаменитых достопримечательностях Санкт-Петербурга.
@@ -283,6 +283,38 @@
                 </li>
             </ul>
         </div>        
+    </section>
+    <section class="expenses">
+        <div class="container">
+            <h2 class="title expenses__title wow fadeInLeft" data-wow-offset="300">Бюджет поездки</h2>
+            <p class="common-text expenses__text wow fadeInRight" data-wow-offset="300">
+                Перед поездкой необходимо рассчитать приблизительный бюджет, который понадобится вам для путешествия.
+            </p>
+            <ul class="expenses__list list-reset">
+                <li class="expenses__item wow fadeInRight">
+                    <img class="expenses__item-image" src="./image/accommodation.svg" alt="Проживание">
+                    <p class="expenses__item-text">Проживание</p>
+                    <span class="expenses__item-price">от 2000 ₽</span>
+                </li>
+                <li class="expenses__item wow fadeInLeft">
+                    <img class="expenses__item-image" src="./image/cutlery.svg" alt="Питание">
+                    <p class="expenses__item-text">Средний чек в ресторане</p>
+                    <span class="expenses__item-price">1300 ₽</span>
+                </li>
+                <li class="expenses__item wow fadeInRight">
+                    <img class="expenses__item-image" src="./image/museum.svg" alt="Экскурсии">
+                    <p class="expenses__item-text">Экскурсии</p>
+                    <span class="expenses__item-price">от 1000 ₽</span>
+                </li>
+                <li class="expenses__item wow fadeInLeft">
+                    <img class="expenses__item-image" src="./image/souvenirs.svg" alt="Сувениры">
+                    <p class="expenses__item-text">Сувениры</p>
+                    <span class="expenses__item-price">от 300 ₽</span>
+                </li>
+            </ul>
+        </div>        
+    </section>
+    <section class="map">
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./scripts/swiper_top.js"></script>
