@@ -12,10 +12,10 @@ function init() {
 
     myMap.controls.remove('default');
 
-    var myPlacemark = new ymaps.Placemark([59.94366822276193,30.320574030339184], {}, {
+    var myPlacemark = new ymaps.Placemark([59.944979063772884,30.319151457148198], {}, {
         iconLayout: 'default#image',
         iconImageHref: 'image/location.svg',
-        iconImageSize: [20, 56],
+        iconImageSize: [30, 66],
       });
     
     myMap.geoObjects.add(myPlacemark); 
