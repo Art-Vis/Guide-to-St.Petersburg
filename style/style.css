@@ -194,7 +194,7 @@ img {
 }
 
 .info__wrapp {
-  display: flex !important;
+  display: flex;
 }
 
 .info__text {
@@ -208,20 +208,6 @@ img {
 
 .projects-swiper-wrapper {
   margin-bottom: 124px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  width: 76px;
-  height: 76px;
-}
-
-.swiper-button-next:after {
-  background-image: url('../image/arrow-right.svg');
-}
-
-.swiper-button-prev:after {
-  background-image: url('../image/arrow-left.svg');
 }
 
 .sub {
@@ -260,29 +246,56 @@ img {
 /* Свайпер */
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
+  width: 76px;
   left: 895px;
-  top: 322px;
+  top: 339px;
 }
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
+  width: 76px;
   right: 295px;
-  top: 322px;
+  top: 339px;
 }
 
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-  content: '';
-  width: 76px;
-  height: 76px;
+  content: ''; 
 }
 
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  content: '';
-  width: 76px;
-  height: 76px;
+  content: ''; 
 }
+
+.swiper-button-prev:hover .swiper-button-prev-svg path,
+.swiper-button-prev:hover .swiper-button-prev-svg circle {
+  stroke: var(--color-orange);
+}
+
+.swiper-button-prev:focus .swiper-button-prev-svg path,
+.swiper-button-prev:focus .swiper-button-prev-svg circle {
+  stroke: var(--color-black);
+}
+
+.swiper-button-next:hover .swiper-button-next-svg path,
+.swiper-button-next:hover .swiper-button-next-svg circle {
+  stroke: var(--color-orange);
+}
+
+.swiper-button-next:focus .swiper-button-next-svg path,
+.swiper-button-next:focus .swiper-button-next-svg circle {
+  stroke: var(--color-black);
+}
+
+.swiper-button-prev-svg path,
+.swiper-button-prev-svg circle, 
+.swiper-button-next-svg path,
+.swiper-button-next-svg circle {
+  transition: stroke .3s ease-in-out;
+}
+
+
 
 /* history */
 
@@ -585,8 +598,9 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 99px;
-  width: 570px;
+  margin-bottom: 9px;
+  height: 101px;
+  width: 576px;
 }
 
 .footer__item {
@@ -610,11 +624,11 @@ img {
 }
 
 .footer__link:hover {
-  color: var(--color-brown);
+  color: var(--color-orange);
 }
 
 .footer__link:active {
-  color: var(--color-orange);
+  color: var(--color-brown);
 }
 
 .coopyright {
@@ -623,4 +637,12 @@ img {
 
 .coopyright__year {
   margin-right: 57px;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-background);
+}
+
+.coopyright__conf {
+  font-size: 12px;
+  line-height: 14px;
 }
