@@ -100,7 +100,7 @@ img {
   background-image: url('../image/header-bg.png');
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .header__nav {
