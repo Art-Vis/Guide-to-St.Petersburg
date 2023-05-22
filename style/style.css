@@ -440,7 +440,7 @@ img {
 /*landmark*/
 .landmark {
   padding-top: 124px;
-  padding-bottom: 126px;
+  padding-bottom: 76px;
   background-color: var(--color-white);
 }
 
@@ -457,7 +457,7 @@ img {
   margin: 0;
   margin-left: auto;
   margin-bottom: 180px;
-  width: 676px;
+  width: 676px;  
   font-size: 18px;
   line-height: 30px;
 }
@@ -506,7 +506,8 @@ img {
 }
 
 .expenses__text {
-  margin-bottom: 200px;
+  margin-bottom: 218px;
+  
 }
 
 .expenses__list {
@@ -525,11 +526,14 @@ img {
 }
 
 .expenses__item-image {
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
 .expenses__item-text {
   margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .expenses__item-price {
@@ -594,6 +598,9 @@ img {
 }
 
 .footer__link {
+  color: var(--color-background);
+  font-weight: 500;
+  font-size: 16px;
   line-height: 19px;
   transition: color 0.3s ease-in-out;
 }
