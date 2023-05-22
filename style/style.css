@@ -375,7 +375,7 @@ img {
   line-height: 22px;
   margin: 0 auto;
   padding-top: 12px;
-  max-width: 266px;
+  max-width: 256px;
 }
 
 .history__item__card-title {
@@ -490,7 +490,7 @@ img {
   color: var(--color-black);
   font-family: 'Prata';
   font-size: 24px;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 .landmark__item__img {
@@ -604,6 +604,7 @@ img {
 }
 
 .footer__item {
+  padding-right: 30px;
   max-width: 200px;
 }
 
