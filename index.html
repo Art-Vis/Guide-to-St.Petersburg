@@ -46,7 +46,7 @@
         <section class="hero">
             <div class="container hero__container">
                 <h1 class="hero__title wow fadeInUp">Путеводитель по Санкт-Петербургу</h1>
-                <span class="hero__descr wow fadeInUp" data-wow-delay="0.3s">Рассказываем самое интересное</span>
+                <p class="hero__descr wow fadeInUp" data-wow-delay="0.3s">Рассказываем самое интересное</p>
             </div>
         </section>
         <section class="info" id="info">
@@ -56,38 +56,32 @@
                     <div class="swiper-container slider swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide info__wrapp">
-                                <div class="info__image">
-                                    <img src="image/info-1.jpg" alt="Петергоф">
-                                </div>
-                                <div class="info__descr">
-                                    <p class="info__text">Санкт-Петербург&nbsp;&mdash; один из&nbsp;самых красивых
-                                        городов
-                                        России, который
-                                        привлекает туристов со всего мира своей&nbsp;архитектурой, культурными
-                                        достопримечательностями и&nbsp;богатой&nbsp;историей.</p>
-                                </div>
+                                <img class="info__image" src="image/info-1.jpg" alt="Петергоф">
+                                <p class="info__text">Санкт-Петербург&nbsp;&mdash; один из&nbsp;самых красивых
+                                    городов
+                                    России, который
+                                    привлекает туристов со всего мира своей&nbsp;архитектурой, культурными
+                                    достопримечательностями и&nbsp;богатой&nbsp;историей.</p>
+                                <!-- <div class="info__descr">
+                                </div> -->
                             </div>
                             <div class="swiper-slide info__wrapp">
-                                <div class="info__image">
-                                    <img src="image/info-2.jpg" alt="Петергоф">
-                                </div>
-                                <div class="info__descr">
-                                    <p class="info__text">Город был основан в&nbsp;1703 году Петром I&nbsp;на берегах
-                                        реки
-                                        Невы и&nbsp;стал символом силы и&nbsp;могущества Российской империи.</p>
-                                </div>
+                                <img src="image/info-2.jpg" class="info__image" alt="Петергоф">
+                                <p class="info__text">Город был основан в&nbsp;1703 году Петром I&nbsp;на берегах
+                                    реки
+                                    Невы и&nbsp;стал символом силы и&nbsp;могущества Российской империи.</p>
+                                <!-- <div class="info__descr">
+                                </div> -->
                             </div>
                             <div class="swiper-slide info__wrapp">
-                                <div class="info__image">
-                                    <img src="image/info-3.jpg" alt="Петергоф">
-                                </div>
-                                <div class="info__descr">
-                                    <p class="info__text">Сегодня Санкт-Петербург&nbsp;&mdash; это не&nbsp;только
-                                        культурный
-                                        центр, но&nbsp;и&nbsp;один из&nbsp;крупнейших портов мира, который является
-                                        важным
-                                        экономическим центром России.</p>
-                                </div>
+                                <img src="image/info-3.jpg" class="info__image" alt="Петергоф">
+                                <p class="info__text">Сегодня Санкт-Петербург&nbsp;&mdash; это не&nbsp;только
+                                    культурный
+                                    центр, но&nbsp;и&nbsp;один из&nbsp;крупнейших портов мира, который является
+                                    важным
+                                    экономическим центром России.</p>
+                                <!-- <div class="info__descr">
+                                </div> -->
                             </div>
                         </div>
                         <button class="btn-reset swiper-button-prev" tabindex="1">
@@ -110,17 +104,14 @@
                         </button>
                     </div>
                 </div>
-
             </div>
             <div class="info__sub">
                 <div class="container">
                     <div class="sub wow fadeIn" data-wow-offset="400">
-                        <div class="sub__text wow fadeInLeft" data-wow-offset="250" data-wow-delay="0.3s">
-                            <p>В&nbsp;этом путеводителе мы&nbsp;расскажем о&nbsp;самых&nbsp;интересных&nbsp;местах
-                                Санкт-Петербурга, которые обязательно стоит посетить при поездке в&nbsp;этот прекрасный
+                            <p class="sub__text wow fadeInLeft" data-wow-offset="250" data-wow-delay="0.3s">В&nbsp;этом путеводителе мы&nbsp;расскажем о&nbsp;самых&nbsp;интересных&nbsp;местах
+                                <br>Санкт-Петербурга, которые обязательно стоит посетить при<br> поездке в&nbsp;этот прекрасный
                                 город.
                             </p>
-                        </div>
                         <img src="./image/info-4.png" class="sub__img-right" alt="Медный всадник">
                         <img src="./image/info-5.png" class="sub__img-left" alt="Ваза">
                     </div>
@@ -388,8 +379,8 @@
                 </ul>
             </nav>
             <div class="coopyright">
-                <span class="coopyright__year">© 2023</span>
-                <span class="coopyright__conf">Политика конфиденциальности</span>
+                <span href="#" class="coopyright__year">© 2023</span>
+                <a href="#" class="footer__link coopyright__conf">Политика конфиденциальности</a>
             </div>
         </div>
     </footer>
