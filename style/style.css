@@ -228,6 +228,10 @@ img {
   position: relative;
   padding: 191px 0 220px;
   height: fit-content;
+  background-image: url("./../image/info-4.png"), url("./../image/info-5.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+  background-position: 1009px 50px, 175px 226px;
 }
 
 .sub__text {
@@ -311,6 +315,27 @@ img {
 }
 
 
+.projects-swiper-wrapper .swiper-pagination {
+  position: absolute;
+  left: 315px;
+  bottom: 27px;
+  line-height: 0;
+  width: max-content;
+  height: 2px;
+}
+
+.projects-swiper-wrapper .swiper-pagination .swiper-pagination-bullet {
+  width: 32px;
+  height: 2px;
+  border-radius: 0;
+  background-color: var(--color-white);
+  margin: 0 10px;
+  opacity: 1;
+}
+
+.projects-swiper-wrapper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-orange);
+}
 
 /* history */
 
@@ -473,17 +498,19 @@ img {
 }
 
 .landmark__container {
+  display: flex;
+  flex-direction: column;
   width: 1176px;
   margin: 0 auto;
 }
 
 .landmark__title {
-  margin-bottom: 157px;
+
 }
 
 .common-text {
+  align-self: flex-end;
   margin: 0;
-  margin-left: auto;
   margin-bottom: 180px;
   width: 676px;
   font-size: 18px;
@@ -501,6 +528,7 @@ img {
 .landmark__title {
   margin: 0;
   width: 187px;
+  margin-bottom: 157px;
   margin-right: 110px;
   color: var(--color-black);
   font-family: 'Prata';
