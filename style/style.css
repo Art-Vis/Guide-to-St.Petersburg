@@ -86,6 +86,13 @@ img {
   list-style: none;
 }
 
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .title {
   margin: 0;
   font-family: 'Prata', sans-serif;
@@ -97,21 +104,25 @@ img {
 
 /* header */
 .header {
-  background-image: url('../image/header-bg.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* background-image: url('../image/header-bg.png');
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
 }
 
 .header__nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-top: 32px;
+  padding-bottom: 25px;
 }
 
 .header__list {
   display: flex;
   justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 25px;
 }
 
 .header__item:not(:last-child) {
@@ -137,8 +148,22 @@ img {
 
 /* hero */
 .hero {
-  padding-top: 219px;
-  padding-bottom: 334px;
+
+  /* padding-top: 219px;
+  padding-bottom: 334px; */
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 732px;
+  width: 100%;
+  background-image: url('../image/header-bg.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .hero__title {
@@ -146,7 +171,7 @@ img {
   margin-bottom: 10px;
   font-family: 'Prata', sans-serif;
   font-size: 48px;
-  line-height: 65px;
+  line-height: 30px;
   text-align: center;
   color: var(--color-brown);
 }
@@ -154,7 +179,7 @@ img {
 .hero__descr {
   display: block;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 60px;
   text-align: center;
 }
 
@@ -260,12 +285,12 @@ img {
 
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-  content: ''; 
+  content: '';
 }
 
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  content: ''; 
+  content: '';
 }
 
 .swiper-button-prev:hover .swiper-button-prev-svg path,
@@ -289,7 +314,7 @@ img {
 }
 
 .swiper-button-prev-svg path,
-.swiper-button-prev-svg circle, 
+.swiper-button-prev-svg circle,
 .swiper-button-next-svg path,
 .swiper-button-next-svg circle {
   transition: stroke .3s ease-in-out;
@@ -470,7 +495,7 @@ img {
   margin: 0;
   margin-left: auto;
   margin-bottom: 180px;
-  width: 676px;  
+  width: 676px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -520,7 +545,7 @@ img {
 
 .expenses__text {
   margin-bottom: 218px;
-  
+
 }
 
 .expenses__list {
