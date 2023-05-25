@@ -116,8 +116,7 @@ img {
 
 .header__nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  padding-top: 32px;
-  padding-bottom: 25px;
+  padding: 32px 0 25px 0;
 }
 
 .header__list {
