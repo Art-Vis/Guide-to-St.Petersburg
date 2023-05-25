@@ -116,8 +116,7 @@ img {
 
 .header__nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  padding-top: 32px;
-  padding-bottom: 25px;
+  padding: 32px 0 25px 0;
 }
 
 .header__list {
@@ -187,7 +186,7 @@ img {
 
 .info {
   padding-top: 201px;
-  background: #FDFAF4;
+  background: var(--color-background);
 }
 
 .info__sub {
@@ -325,7 +324,7 @@ img {
 /* history */
 
 .history {
-  background-color: #FDFAF4;
+  background-color: var(--color-background);
   padding: 128px 0 176px;
 }
 
@@ -605,7 +604,7 @@ img {
   height: 200px;
   padding-top: 48px;
   padding-bottom: 24px;
-  color: #FDFAF4;
+  color: var(--color-background);
   background-color: #181515;
 }
 
