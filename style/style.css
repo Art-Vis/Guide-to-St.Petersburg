@@ -646,9 +646,7 @@ img {
 }
 
 .footer__list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  column-count: 2;
   margin-bottom: 9px;
   height: 101px;
   width: 576px;
