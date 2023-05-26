@@ -509,6 +509,7 @@ img {
 }
 
 .landmark__title {
+  margin-bottom: 157px;
 
 }
 
@@ -547,10 +548,16 @@ img {
 
 .landmark__text {
   margin: 0;
+  margin-top: -6px;
   max-width: 476px;
   font-size: 16px;
   line-height: 26px;
 }
+
+.landmark__text span {
+  display: inline-block;
+  margin-bottom: 12px;
+} 
 
 /* expenses */
 
@@ -589,7 +596,7 @@ img {
 }
 
 .expenses__item-image {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .expenses__item-text {
